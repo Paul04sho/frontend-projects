@@ -1,5 +1,4 @@
 
-```md
 # 🚀 Frontend Projects
 
 Une collection de petits projets front-end (HTML, CSS, JavaScript vanilla) réalisés à partir de défis [roadmap.sh](https://roadmap.sh).  
@@ -107,5 +106,3 @@ Tu es libre de réutiliser, modifier et partager ces projets.
 ## 💡 Remerciements
 
 Merci à [roadmap.sh](https://roadmap.sh) pour les idées de challenges !
-
-```
