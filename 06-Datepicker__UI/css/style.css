@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Main colors */
+:root {
+    --dark-body-bg: #232429;
+    --light-body-bg: #F5F7FB;
+
+    --dark-input: #323741;
+    --light-input: #ffffff;
+
+    --dark-border: #484D5A;
+    --light-border: #B8BCCB;
+
+    --dark-date-foreground: #FFFFFF;
+    --dark-inactive-fg: #636A78;
+    --dark-active-fg: #9CA0B1;
+    --dark-current-year: #3B414A;
+    --dark-current-year-fg: #B2B8C9;
+    --dark-selected: #1D5EFF;
+    --dark-hover: #2C437B;
+    --dark-arrows-bg: #B0B8CC;
+    --dark-arrows-fill: #333641;
+}
+
+/* Reset */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    height: 100vh;
+    background: var(--dark-body-bg);
+    font-family:'Poppins', sans-serif;
+}
+
+/* Date Picker */
+#date_picker{
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    transform: scale(1.2);
+    top: 15%;
+}
+
+#date_picker_input{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+label{
+    display: block;
+    color: #8A8F9F;
+    font-size: 1.02rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#date{
+    color: var(--dark-date-foreground);
+    font-size: 16px;
+    padding: 12px 40px 12px 20px;
+    border: none;
+    outline: none;
+    color: var(--dark-date-foreground);
+    font-size: 16px;
+}
+
+#date:hover{
+    cursor: pointer;
+}
+
+#date:focus,
+.date.onFocus{
+    outline: none;
+    border: 2px solid var(--dark-selected);
+}
+
+#date_picker_calendar{
+    min-height: fit-content;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+    /* border: 2px solid red; For debugging purposes */
+    padding: 12px;
+}
+
+#date_picker_input::after{
+    content: "▾";
+    padding: 12px 15px;
+    position: absolute;
+    right: 4px;
+    top: 42%;
+    color: #8A8F9F;
+}
+
+#date_picker_input.showCal:after{
+    transform: rotate(180deg);
+}
+
+.showCalendar{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+#date,
+#date_picker_calendar{
+    border-radius: 15px;
+    background: var(--dark-input);
+    border: 2px solid var(--dark-border);
+    width: 100%;
+}
+
+#calendar_header{
+   /* border: 3px solid yellow; */
+    display: flex; /* flex container to position the arrows on the sides */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 30px;
+    margin-bottom: 8px;
+    color: var(--dark-date-foreground);
+}
+
+.cal-btn{
+    width: 20px;
+    height: 20px;
+    background: var(--dark-arrows-bg);
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 6px;
+}
+
+.cal-btn img{
+    width: 42%;
+    height: 42%;
+}
+
+.cal-btn.back img{
+    transform: rotate(90deg);
+}
+
+.cal-btn.front img{
+    transform: rotate(-90deg);
+}
+
+/* Calendar main body */
+#cal_days,
+#calendar_main{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* represents the 7 days in a week */
+    row-gap: 5px;
+    column-gap: 5px;
+    color: var(--dark-inactive-fg);
+}
+
+#cal_days{
+    /*border: 5px solid greenyellow;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#calendar_main{
+    /*border: 5px solid orange;*/
+    grid-template-rows: repeat(5, min(30px)); /* represents the 5 weeks in a month */
+}
+
+.cell_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Will be used to highlight the selected date via JavaScript*/
+.current{
+    background: var(--dark-current-year);
+    color: var(--dark-current-year-fg);
+}
+
+.current:not(.active):hover{
+    background: var(--dark-hover);
+    color: var(--dark-date-foreground);
+    border: 2px solid var(--dark-selected);
+}
+
+.cal-btn:hover,
+.current:hover{
+    cursor: pointer;
+}
+
+.active{
+    background: var(--dark-selected);
+    color: var(--dark-date-foreground);
+}
+
+/* Indicator for active/inactive state of the date picker */
+.inactive_indicator:after{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+}
