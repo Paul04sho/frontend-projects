@@ -27,7 +27,7 @@ Chaque projet contient un `index.html` (et éventuellement `styles.css`, `script
 
 ## 🛠️ Comment lancer les projets
 
-### Option 1 : Ouvrir directement
+ Option 1 : Ouvrir directement
 1. Clone le repo :
    ```bash
    git clone https://github.com/Paul04sho/frontend-projects.git
@@ -45,7 +45,7 @@ Chaque projet contient un `index.html` (et éventuellement `styles.css`, `script
 
 ---
 
-### Option 2 : Lancer via un serveur local (recommandé)
+ Option 2 : Lancer via un serveur local (recommandé)
 
 Utile si le projet utilise des modules JS.
 
@@ -72,7 +72,7 @@ Utile si le projet utilise des modules JS.
 
 ---
 
-## 📌 Liste des projets
+ 📌 Liste des projets
 
 | Projet                       | Description                                 | Challenge                                                     |
 | ---------------------------- | ------------------------------------------- | ------------------------------------------------------------- |
@@ -81,13 +81,13 @@ Utile si le projet utilise des modules JS.
 | 03 - Well Designed Portfolio | Portfolio stylisé avec sections             | [roadmap.sh](https://roadmap.sh/projects/portfolio-website)   |
 | 04 - Grid Layout             | Galerie responsive avec CSS Grid            | [roadmap.sh](https://roadmap.sh/projects/image-grid)          |
 | 05 - Changelog Component     | Composant de changelog (historique updates) | [roadmap.sh](https://roadmap.sh/projects/changelog-component) |
-| 06 - Datepicker UI           | Composant UI type calendrier                | [roadmap.sh](https://roadmap.sh/projects/datepicker-ui)                                                |
+| 06 - Datepicker UI           | Composant UI type calendrier                | [roadmap.sh](https://roadmap.sh/projects/datepicker-ui)       |
 
 > 🔜 Screenshots à venir pour chaque projet.
 
 ---
 
-## 📖 Contribution
+ 📖 Contribution
 
 * Crée un dossier `0X-Nom_du_projet` pour un nouveau challenge.
 * Garde la structure propre (`index.html`, `styles.css`, `script.js`).
@@ -96,13 +96,13 @@ Utile si le projet utilise des modules JS.
 
 ---
 
-## 📜 Licence
+ 📜 Licence
 
 Distribué sous licence **MIT**.
 Tu es libre de réutiliser, modifier et partager ces projets.
 
 ---
 
-## 💡 Remerciements
+ 💡 Remerciements
 
 Merci à [roadmap.sh](https://roadmap.sh) pour les idées de challenges !
