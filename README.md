@@ -19,7 +19,7 @@ Chaque dossier correspond à un projet indépendant, prêt à être ouvert dans 
 ├── 06-Datepicker_UI/
 └── README.md
 
-````
+```
 
 Chaque projet contient un `index.html` (et éventuellement `styles.css`, `script.js`).
 
@@ -28,17 +28,19 @@ Chaque projet contient un `index.html` (et éventuellement `styles.css`, `script
 ## 🛠️ Comment lancer les projets
 
  Option 1 : Ouvrir directement
+
 1. Clone le repo :
-   ```bash
-   git clone https://github.com/Paul04sho/frontend-projects.git
-   cd frontend-projects
-````
+
+```bash
+  git clone https://github.com/Paul04sho/frontend-projects.git
+  cd frontend-projects
+```
 
 2. Entre dans le dossier d’un projet, ex :
 
-   ```bash
-   cd 03-Well_Designed_Portfolio
-   ```
+```bash
+  cd 03-Well_Designed_Portfolio
+```
 3. Double-clique sur `index.html` → s’ouvre dans ton navigateur.
 
 👉 Suffisant pour les projets statiques (HTML + CSS).
